@@ -59,63 +59,80 @@ loslaat, dan houdt de slang op met bewegen. In dit geval moet de slang doorgaan
 tot je een andere kant op gaat. *Tip*: hiervoor heb je het *herhaal* blok nodig.
 Begin het programma met het *wanneer op de vlag wordt geklikt* blok.
 
+.. container:: toggle
+
+  .. container:: header
+
+    Klik om voorbeeld te laten zien
 
 
-.. raw:: html
+  .. raw:: html
 
-  <div class = "scratch">
-    wanneer groene vlag wordt aangeklikt
-    herhaal
-    als <key [pijltje omhoog v] ingedrukt?> then
-    end
+    <div class = "scratch">
+      wanneer groene vlag wordt aangeklikt
+      herhaal
+      als &lt;toets [pijltje omhoog v] ingedrukt?&gt; dan
+      richt naar (0) graden
+      end
+      neem (5) stappen
+    </div>
 
-
-.. raw:: html
-
-  <div class = "scratch">
-    wanneer groene vlag wordt aangeklikt
-    toets [pijltje omhoog v] ingedrukt?
-    key [arrow down v] pressed?
-    if <> then
-    if <key [arrow down v] pressed?> then
-    end
-    <span>if <key [pijltje omhoog v] pressed?> then</span>
-    end
-  </div>
-
+Laat de appels verschijnen (en weer verdwijnen)
+-----------------------------------------------
 
 .. container:: toggle
 
-   .. container:: header
+  .. container:: header
 
-      klik om voorbeeld te laten zien
+    Klik om voorbeeld te laten zien
 
-   .. raw:: html
+
+  .. raw:: html
 
     <div class = "scratch">
-        wanneer op vlag geklikt
-        richt naar (0) graden
-        neem (5) stappen
+      wanneer groene vlag wordt aangeklikt
+      ga naar (willekeurige positie)
+      verschijn
+      herhaal
+      als &lt;&lt;raak ik (slang hoofd v)?&gt; en &lt;(uiterlijk [nummer v]) = (1)&gt;&gt; dan
+      ga naar (willekeurige positie)
+      verander [score v] met (1)
+      end
     </div>
 
+Maak de slang langer
+--------------------
+
+.. container:: toggle
+
+  .. container:: header
+
+    Klik om voorbeeld te laten zien
 
 
-Je kunt in de instructies gebruik maken van Scratch blokken. Gebruik daarvoor de volgende code:
+  .. raw:: html
 
-.. code::
+    <div class = "scratch">
+      wanneer ik als kloon start
+      verander uiterlijk naar (slang_lijf v)
+      wacht ((score) * (0.1)) sec.
+      verwijder deze kloon
+    </div>
 
-   .. raw:: html
+Verliezen als je in jezelf hapt
 
-      <div class = "scratch">
-          when flag clicked
-          clear
-      </div>
+.. container:: toggle
 
-En dat resulteert dan in:
+  .. container:: header
 
-.. raw:: html
+    Klik om voorbeeld te laten zien
 
-   <div class = "scratch">
-       when flag clicked
-       clear
-   </div>
+
+  .. raw:: html
+
+    <div class = "scratch">
+      wanneer ik als kloon start
+      als &lt;raak ik kleur [#9afeb6]?&gt; dan
+      maak [score v] (0)
+    </div>
+
