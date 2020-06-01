@@ -1,6 +1,6 @@
-# Instructie template
+# Scratch opdrachten
 
-Dit archief bevat instructies voor het gebruik van de instructie template. 
+Dit archief bevat instructies voor Scratch3 opdrachten.
 
-De pagina's zijn zichtbaar via [https://coderdojonijmegen.github.io/instructie_template/](https://coderdojonijmegen.github.io/instructie_template/).
+* Snake
 
