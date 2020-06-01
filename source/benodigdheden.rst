@@ -1,19 +1,18 @@
 Benodigdheden
 =============
 
-Voor het gebruik van deze template moeten de volgende programma's geïnstalleerd zijn:
+Deze opdracht maak je met `Scratch <https://scratch.mit.edu/>`_. Als je nog
+geen account had maak dit dan eerst aan.
 
- - Python 2.7/3.6
- - Sphinx
- - sphinx-rtd-theme
+Als startpunt voor de opdracht kun je `dit project
+<https://scratch.mit.edu/projects/400374714>`_ gebruiken (je kunt dan stap 1
+van de opdraht overslaan). Je kunt het project
+zelf gaan bewerken door op de *Remix* knop boven in Scratch te klikken:
 
-Installatie onder Ubuntu:
+.. image:: imgs/remix.png
 
-.. code-block:: bash
+Zet in Scratch eerst de taal op Nederlands via de wereldbol linksboven.
 
-   apt install python3 python3-pip
-   git clone https://github.com/coderdojonijmegen/instructie_template.git
-   cd instructie_template
-   pip3 install -r requirements.txt
-
-Intellij ondersteunt color-coding en code-completion voor reStructuredText middels een plugin.
+De opdracht is afgeleid van `deze instructies
+<https://bournetocode.com/projects/7-CS-ScratchArcade/pages/2_Lesson.html>`_
+(`Github bron <https://github.com/digixc/7-CS-ScratchArcade>`_).
