@@ -1,10 +1,10 @@
-instructie template
-===================
+scratch-opdrachten
+==================
 
 .. toctree::
    :maxdepth: 2
    :caption: Inhoud:
 
    benodigdheden
-   opdracht
+   snake
    licentie
