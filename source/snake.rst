@@ -1,20 +1,23 @@
 Snake
 =====
 
+Inleiding
+---------
+
 In deze opdracht ga je het klassieke spelletje *Snake*, dus *Slang*,
 programmeren. Je bestuurt in dit spelletje een slang en je doel is door zo veel
 mogelijk te eten zo lang mogelijk te worden. Maar pas op, als je in je eigen
 staart bijt dan ben je af!
 
-Je gaat het spel zo bouwen:
+Dit zijn de stappen die je gaat programmeren:
 
 1. Maak de slang
 2. Zorg dat de slang kan bewegen
-3. Maak eten voor de slang
-4. Laat het eten op allerlei plekken verschijnen
-5. Maak de slang langer door het eten
-6. Laat het spel eindigen als de slang in de eigen staart bijt
-7. Hou de score bij
+3. Laat het eten van de slang verschijnen
+4. Maak de slang langer door het eten
+5. Laat het spel eindigen als de slang in de eigen staart bijt
+
+Als je dan nog zin (en tijd) hebt dan zijn er nog allerlei uitbreidingen mogelijk.
 
 Als startpunt voor de opdracht kun je `dit project
 <https://scratch.mit.edu/projects/400374714>`_ gebruiken (je kunt dan stap 1
