@@ -1,0 +1,481 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="nl" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="nl" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Snake &mdash; scratch-opdrachten  documentatie</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/coderdojo.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Zoeken" href="search.html" />
+    <link rel="next" title="Licentie" href="licentie.html" />
+    <link rel="prev" title="Benodigdheden" href="benodigdheden.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> scratch-opdrachten
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Inhoud:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="benodigdheden.html">Benodigdheden</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Snake</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inleiding">Inleiding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#maak-de-slang">Maak de slang</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zorg-dat-de-slang-kan-bewegen">Zorg dat de slang kan bewegen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#laat-de-appels-verschijnen">Laat de appels verschijnen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#maak-de-slang-langer">Maak de slang langer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verliezen-als-je-in-jezelf-hapt">Verliezen als je in jezelf hapt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uitbreidingen">Uitbreidingen</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="licentie.html">Licentie</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">scratch-opdrachten</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Snake</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/snake.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="snake">
+<h1>Snake<a class="headerlink" href="#snake" title="Permalink naar deze titel">¶</a></h1>
+<div class="section" id="inleiding">
+<h2>Inleiding<a class="headerlink" href="#inleiding" title="Permalink naar deze titel">¶</a></h2>
+<p>In deze opdracht ga je het klassieke spelletje <em>Snake</em>, dus <em>Slang</em>,
+programmeren. Je bestuurt in dit spelletje een slang en je doel is door zo veel
+mogelijk te eten zo lang mogelijk te worden. Maar pas op, als je in je eigen
+staart bijt dan ben je af!</p>
+<p>Dit zijn de stappen die je gaat programmeren:</p>
+<ol class="arabic simple">
+<li><p>Maak de slang</p></li>
+<li><p>Zorg dat de slang kan bewegen</p></li>
+<li><p>Laat het eten van de slang verschijnen</p></li>
+<li><p>Maak de slang langer door het eten</p></li>
+<li><p>Laat het spel eindigen als de slang in de eigen staart bijt</p></li>
+</ol>
+<p>Als je dan nog zin (en tijd) hebt dan zijn er nog allerlei uitbreidingen mogelijk.</p>
+<p>Als startpunt voor de opdracht kun je <a class="reference external" href="https://scratch.mit.edu/projects/400374714">dit project</a> gebruiken (je kunt dan stap 1
+van de opdraht overslaan). Je kunt het project
+zelf gaan bewerken door op de <em>Remix</em> knop boven in Scratch te klikken:</p>
+<img alt="_images/remix.png" src="_images/remix.png" />
+<p>De opdracht is afgeleid van <a class="reference external" href="https://bournetocode.com/projects/7-CS-ScratchArcade/pages/2_Lesson.html">deze instructies</a>
+(<a class="reference external" href="https://github.com/digixc/7-CS-ScratchArcade">Github bron</a>).</p>
+</div>
+<div class="section" id="maak-de-slang">
+<h2>Maak de slang<a class="headerlink" href="#maak-de-slang" title="Permalink naar deze titel">¶</a></h2>
+<p>Als je gekozen hebt het project helemaal vanaf het begin te doen, ontwerp dan
+je eigen slang of download deze plaatjes om de twee <em>uiterlijken</em> van de slang
+mee te maken:</p>
+<img alt="_images/slang_hoofd.png" src="_images/slang_hoofd.png" />
+<img alt="_images/slang_lijf.png" src="_images/slang_lijf.png" />
+<p>Volg deze stappen om een sprite van de slang te maken:</p>
+<ol class="arabic simple">
+<li><p>Klik op het icoon voor een nieuwe sprite (rechtsonder, plaatje van de kat)
+en kies voor <em>Upload sprite</em>.</p></li>
+<li><p>Upload het hoofd van de slang.</p></li>
+<li><p>Ga naar het tabblad <em>Uiterlijken</em> (linksboven, rechts naast het <em>Code</em>
+tabblad).</p></li>
+<li><p>Klik op het icoon voor een nieuw uiterlijk (linksonder, plaatje van de kat)
+en kies voor <em>Upload uiterlijk</em>.</p></li>
+<li><p>Upload het lijf van de slang.</p></li>
+<li><p>Klik nu op het hoofd van de slang.</p></li>
+</ol>
+</div>
+<div class="section" id="zorg-dat-de-slang-kan-bewegen">
+<h2>Zorg dat de slang kan bewegen<a class="headerlink" href="#zorg-dat-de-slang-kan-bewegen" title="Permalink naar deze titel">¶</a></h2>
+<p>Het is de bedoeling om de slang met de pijltjestoetsen te laten bewegen. Er
+zijn verschillende manieren om dit te doen, bijvoorbeeld zo:</p>
+<div class = "scratch">
+  wanneer [pijltje omhoog v] is ingedrukt
+  richt naar (0) graden
+  neem (5) stappen
+</div><p>Met <em>richt naar 0 graden</em> draai je het hoofd van de slang naar boven, met <em>neem
+5 stappen</em> beweegt de slang 5 stappen in die richting. Maar… als je de toets
+loslaat, dan houdt de slang op met bewegen.</p>
+<p><strong>Opdracht</strong> Zorg dat de slang doorgaat met bewegen totdat je een andere kant
+op gaat. <em>Tip 1</em>: hiervoor heb je het <em>herhaal</em> blok uit het menu <em>Besturen</em>
+nodig. <em>Tip 2</em>: begin het programma met het <em>wanneer op de vlag wordt geklikt</em>
+blok uit het menu <em>Gebeurtenissen</em>.</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode te laten zien om de slang omhoog te laten bewegen</p>
+</div>
+<div class = "scratch">
+  wanneer groene vlag wordt aangeklikt
+  herhaal
+  als &lt;toets [pijltje omhoog v] ingedrukt?&gt; dan
+  richt naar (0) graden
+  end
+  neem (10) stappen
+  wacht (0.1) sec.
+</div></div>
+<p>In de voorbeeldcode wordt het blok <em>wacht 0.1 sec.</em> gebruikt. Dit is niet nodig
+om de slang te laten bewegen, maar wordt verderop in het spel belangrijk.
+Door de wachttijd en/of het aantal stappen dat de slang zet te veranderen kun
+je de snelheid van de slang bepalen.</p>
+</div>
+<div class="section" id="laat-de-appels-verschijnen">
+<h2>Laat de appels verschijnen<a class="headerlink" href="#laat-de-appels-verschijnen" title="Permalink naar deze titel">¶</a></h2>
+<p>Nu is het tijd om de slang eten te geven. Dit voorbeeld gaat uit van
+appels, je kunt natuurlijk ook iets heel anders verzinnen. Om het lekker
+onvoorspelbaar te maken waar de appel verschijnt is het blok <em>ga naar
+willekeurige positie</em> uit het menu <em>Beweging</em> heel geschikt.</p>
+<p><strong>Opdracht</strong> Maak een nieuwe <em>sprite</em> voor de appel, en zorg dat er bij het begin
+van het spel een appel verschijnt. <em>Tip</em>: zorg dat je de appel-sprite hebt
+gekozen zodat de code die je maakt ook echt bepaalt wat de appel moet doen.</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode te laten zien</p>
+</div>
+<div class = "scratch">
+  wanneer groene vlag wordt aangeklikt
+  ga naar (willekeurige positie)
+</div></div>
+<p>De volgende stap is om een “nieuwe” appel op een andere plek te laten
+verschijnen wanneer de slang er een heeft opgegeten. Hiervoor maak je niet echt
+een <em>nieuwe</em> appel, maar je laat de appel-sprite gewoon op een andere plek
+verschijnen.</p>
+<p><strong>Opdracht</strong> Laat de appel op een andere plek verschijnen als de slang er een
+heeft opgegeten. <em>Tip</em>: hiervoor kun je het blok <em>raak ik …</em> uit het menu
+<em>Waarnemen</em> gebruiken.</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode te laten zien</p>
+</div>
+<div class = "scratch">
+  wanneer groene vlag wordt aangeklikt
+  ga naar (willekeurige positie)
+  herhaal
+  als &lt;raak ik (slang hoofd v)?&gt; dan
+  ga naar (willekeurige positie)
+  end
+</div></div>
+</div>
+<div class="section" id="maak-de-slang-langer">
+<h2>Maak de slang langer<a class="headerlink" href="#maak-de-slang-langer" title="Permalink naar deze titel">¶</a></h2>
+<p>Van al die appels groeit de slang natuurlijk wel! Het is nu tijd om de slang
+langer te maken als je een appel eet. Hiervoor is het eerst nodig dat je
+bijhoudt hoeveel appels de slang al heeft gegeten, dat kun je ook meteen als
+je <em>score</em> in het spel gebruiken!</p>
+<p><strong>Opdracht</strong> Hou het aantal gegeten appels bij. <em>Tip 1</em>: hiervoor heb je een
+<em>variabele</em> nodig, deze maak je in het menu <em>Variabelen</em>. <em>Tip 2</em>: zet aan het
+begin van het spel de waarde van de variabele op 0.</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode voor de slang te laten zien</p>
+</div>
+<div class = "scratch">
+  wanneer groene vlag wordt aangeklikt
+  maak [score v] (0)
+  enzovoort
+</div></div>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode voor de appel te laten zien</p>
+</div>
+<div class = "scratch">
+  wanneer groene vlag wordt aangeklikt
+  ga naar (willekeurige positie)
+  herhaal
+  als &lt;raak ik (slang hoofd v)?&gt; dan
+  ga naar (willekeurige positie)
+  verander [score v] met (1)
+  end
+</div></div>
+<p>Nu komt het moeilijkste stukje van het spel: het lijf van de slang! Hiervoor
+ga je werken met <em>klonen</em> van de slang, deze functies vind je in het menu
+<em>Besturen</em>. Dit werkt zo:</p>
+<ul class="simple">
+<li><p>het lijf van de slang maak je door op de plek van het hoofd een kloon te
+maken.</p></li>
+<li><p>het lijf van de slang is het tweede <em>uiterlijk</em> van de slang <em>sprite</em>, om
+de kop in een lijf te laten veranderen heb je het <em>verander uiterlijk naar</em>
+blok in het menu <em>Uiterlijken</em> nodig.</p></li>
+<li><p>als je nog geen of weinig appels hebt gegeten, dan wil je zo’n kloon meteen
+- of in ieder geval heel snel - weer <em>laten verdwijnen</em>.</p></li>
+<li><p>hoe meer appels je hebt gegeten dus hoe hoger je score, hoe langer je wilt
+wachten met het laten verdwijnen van de kloon.</p></li>
+</ul>
+<p><strong>Opdracht</strong> Kloon de kop van de slang (bij iedere stap), en laat de kloons
+na een tijdje weer verdwijnen. <em>Tip</em>: je kunt uitrekenen hoe lang je moet
+wachten door je score te vermenigvuldigen met hoe lang 1 stap van de slang
+duurt.</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode van de slang te laten zien</p>
+</div>
+<div class = "scratch">
+  wanneer groene vlag wordt aangeklikt
+  herhaal
+  als &lt;toets [pijltje omhoog v] ingedrukt?&gt; dan
+  richt naar (0) graden
+  end
+  neem (10) stappen
+  wacht (0.1) sec.
+  maak een kloon van (mijzelf v)
+</div></div>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode van kloons van de slang te laten zien</p>
+</div>
+<div class = "scratch">
+  wanneer ik als kloon start
+  verander uiterlijk naar (slang_lijf v)
+  wacht ((score) * (0.1)) sec.
+  verwijder deze kloon
+</div></div>
+</div>
+<div class="section" id="verliezen-als-je-in-jezelf-hapt">
+<h2>Verliezen als je in jezelf hapt<a class="headerlink" href="#verliezen-als-je-in-jezelf-hapt" title="Permalink naar deze titel">¶</a></h2>
+<p>Je hebt nu een slang die steeds langer wordt als ie meer appels eet. Wat nog
+mist is dat het spel is afgelopen als je slang in zichzelf bijt. Dit gebeurt
+wanneer een deel van het lijf een ander deel van het lijf raakt.</p>
+<p><strong>Opdracht</strong> Zorg ervoor dat het spel stopt als de slang in zichzelf bijt.
+<em>Tip</em>: hiervoor kun je weer het <em>raak ik</em> blok gebruiken.</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Klik om de voorbeeldcode te laten zien</p>
+</div>
+<div class = "scratch">
+  wanneer ik als kloon start
+  als &lt;raak ik kleur [#9afeb6]?&gt; dan
+  stop [alle v]
+</div></div>
+</div>
+<div class="section" id="uitbreidingen">
+<h2>Uitbreidingen<a class="headerlink" href="#uitbreidingen" title="Permalink naar deze titel">¶</a></h2>
+<p>Je kunt het spel natuurlijk nog veel mooier, spannender en moeilijker maken.
+Hier heb je alvast een lijstje met ideeën als je nog verder wil programmeren
+aan <em>Snake</em>:</p>
+<ul class="simple">
+<li><p>laat de appels na een tijdje weer verdwijnen</p></li>
+<li><p>maak een start- of eindscherm voor het spel</p></li>
+<li><p>laat de slang sneller gaan als je meer appels hebt gegeten</p></li>
+<li><p>laat het spel ook afgelopen zijn als je de rand raakt</p></li>
+<li><p>kies een mooie achtergrond voor je spel</p></li>
+<li><p>laat ook voorwerpen verschijnen die je juist moet ontwijken</p></li>
+<li><p>programmeer het spel voor twee spelers</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="licentie.html" class="btn btn-neutral float-right" title="Licentie" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="benodigdheden.html" class="btn btn-neutral float-left" title="Benodigdheden" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CoderDojo Nijmegen
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+ <script type="text/javascript">
+    // https://stackoverflow.com/a/25543713/134731 for toggle example
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+<script src="_static/scratchblocks-v3.4-min.js"></script>
+<script src="_static/translations-all-v3.4.js" charset="utf8"></script>
+
+<script>
+  function parseBlocks(codeBlock) {
+    var doc
+    var docView
+    var svg
+    // Parse the source code
+    doc = scratchblocks.parse(codeBlock.innerHTML, {languages: ['en','nl']})
+
+    // // Create a DocView with your chosen style
+    docView = scratchblocks.newView(doc, {
+      style: 'scratch3', // Or 'scratch2'
+    })
+
+    // Render to an SVG
+    svg = docView.render()
+
+    // Scratch 3 is zoomed out by default, so you probably want to do the same
+    svg.style.transform = 'scale(0.675)';
+
+    // Add that SVG to your page, etc
+    svg.style.transformOrigin = '0 0';
+    return svg
+  }
+  var codeblocks = document.getElementsByClassName("scratch")
+  var parsedBlock
+  for (i = 0; i < codeblocks.length; i++) {
+    parsedBlock = parseBlocks(codeblocks[i])
+    codeblocks[i].innerHTML = ""
+    codeblocks[i].appendChild(parsedBlock)
+  }
+
+</script>
+
+
+</body>
+</html>
