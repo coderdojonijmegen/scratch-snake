@@ -1,6 +1,4 @@
-# Scratch opdrachten
+# Snake met Scratch
 
-Dit archief bevat instructies voor Scratch3 opdrachten.
-
-* Snake
+Dit archief bevat instructies voor het maken van Snake met Scratch 3
 
