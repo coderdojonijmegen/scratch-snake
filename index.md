@@ -1,7 +1,8 @@
 ---
-title: "Snake met Scratch"
+title: "Scratch - Snake"
 date: 2020-08-22T22:07:47+02:00
 draft: false
+toc: true
 headercolor: "teal-background"
 ---
 
@@ -9,13 +10,13 @@ We gaan met Scratch het klassieke spel Snake bouwen.
 
 <!--more-->
 
-# Benodigdheden
+## Benodigdheden
 
 Deze opdrachten maak je met [Scratch](https://scratch.mit.edu/). Als je nog geen account had, maak dit dan eerst aan.
 
 Zet in Scratch eerst de taal op Nederlands via de wereldbol linksboven.
 
-# Inleiding
+## Inleiding
 
 In deze opdracht ga je het klassieke spelletje Snake, dus Slang, programmeren. Je bestuurt in dit spelletje een slang en je doel is door zo veel mogelijk te eten zo lang mogelijk te worden. Maar pas op, als je in je eigen staart bijt dan ben je af!
 
@@ -35,7 +36,7 @@ Als startpunt voor de opdracht kun je dit project gebruiken (je kunt dan stap 1 
 
 De opdracht is afgeleid van [deze instructies](https://bournetocode.com/projects/7-CS-ScratchArcade/pages/2_Lesson.html) ([Github bron](https://github.com/digixc/7-CS-ScratchArcade)).
 
-# Maak de slang
+## Maak de slang
 
 Als je gekozen hebt het project helemaal vanaf het begin te doen, ontwerp dan je eigen slang of download deze plaatjes om de twee uiterlijken van de slang mee te maken:
 
@@ -49,7 +50,7 @@ Volg deze stappen om een sprite van de slang te maken:
 5. Upload het lijf van de slang.
 6. Klik nu op het hoofd van de slang.
 
-# Zorg dat de slang kan bewegen
+## Zorg dat de slang kan bewegen
 
 Het is de bedoeling om de slang met de pijltjestoetsen te laten bewegen. Er zijn verschillende manieren om dit te doen, bijvoorbeeld zo:
 
@@ -82,7 +83,7 @@ In de voorbeeldcode wordt het blok _wacht 0.1 sec_. gebruikt. Dit is niet nodig 
 wordt verderop in het spel belangrijk. Door de wachttijd en/of het aantal stappen dat de slang zet te veranderen kun je
 de snelheid van de slang bepalen.
 
-# Laat de appels verschijnen
+## Laat de appels verschijnen
 
 Nu is het tijd om de slang eten te geven. Dit voorbeeld gaat uit van appels, je kunt natuurlijk ook iets heel anders 
 verzinnen. Om het lekker onvoorspelbaar te maken waar de appel verschijnt, is het blok _ga naar willekeurige positie_ uit 
@@ -118,7 +119,7 @@ heeft opgegeten. *Tip*: hiervoor kun je het blok *raak ik ...* uit het menu
 {{< /scratch >}}
 {{< /voorbeeld >}}
 
-# Maak de slang langer
+## Maak de slang langer
 
 Van al die appels groeit de slang natuurlijk wel! Het is nu tijd om de slang
 langer te maken als je een appel eet. Hiervoor is het eerst nodig dat je
@@ -137,7 +138,7 @@ begin van het spel de waarde van de variabele op 0.
 {{< /scratch >}}
 {{< /voorbeeld >}}
 
-# Uitbreidingen
+## Uitbreidingen
 
 Je kunt het spel natuurlijk nog veel mooier, spannender en moeilijker maken.
 Hier heb je alvast een lijstje met ideeën als je nog verder wil programmeren
