@@ -65,8 +65,9 @@ Met _richt naar 0 graden_ draai je het hoofd van de slang naar boven, met _neem 
 Maar... als je de toets loslaat, dan houdt de slang op met bewegen.
 
 **Opdracht** Zorg dat de slang doorgaat met bewegen totdat je een andere kant op gaat. 
-_Tip 1_: hiervoor heb je het _herhaal_ blok uit het menu _Besturen_ nodig. 
-_Tip 2_: begin het programma met het _wanneer op de vlag wordt geklikt_ blok uit het menu _Gebeurtenissen_.
+
+ _Tip 1_: hiervoor heb je het _herhaal_ blok uit het menu _Besturen_ nodig.  
+ _Tip 2_: begin het programma met het _wanneer op de vlag wordt geklikt_ blok uit het menu _Gebeurtenissen_.
 
 {{< voorbeeld kop="Klik om de voorbeeldcode te laten zien om de slang omhoog te laten bewegen" >}}
 {{< scratch >}}
@@ -91,6 +92,7 @@ verzinnen. Om het lekker onvoorspelbaar te maken waar de appel verschijnt, is he
 het menu _Beweging_ heel geschikt.
 
 **Opdracht** Maak een nieuwe sprite voor de appel, en zorg dat er bij het begin van het spel een appel verschijnt. 
+
 _Tip_: zorg dat je de appel-sprite hebt gekozen, zodat de code die je maakt ook echt bepaalt wat de appel moet doen.
 
 {{< voorbeeld kop="Klik om de voorbeeldcode te laten zien" >}}
@@ -106,8 +108,9 @@ een *nieuwe* appel, maar je laat de appel-sprite gewoon op een andere plek
 verschijnen.
 
 **Opdracht** Laat de appel op een andere plek verschijnen als de slang er een
-heeft opgegeten. *Tip*: hiervoor kun je het blok *raak ik ...* uit het menu
-*Waarnemen* gebruiken.
+heeft opgegeten. 
+
+_Tip_: hiervoor kun je het blok *raak ik ...* uit het menu *Waarnemen* gebruiken.
 
 {{< voorbeeld kop="Klik om de voorbeeldcode te laten zien" >}}
 {{< scratch >}}
@@ -127,9 +130,81 @@ langer te maken als je een appel eet. Hiervoor is het eerst nodig dat je
 bijhoudt hoeveel appels de slang al heeft gegeten, dat kun je ook meteen als
 je *score* in het spel gebruiken!
 
-**Opdracht** Hou het aantal gegeten appels bij. *Tip 1*: hiervoor heb je een
-*variabele* nodig, deze maak je in het menu *Variabelen*. *Tip 2*: zet aan het
-begin van het spel de waarde van de variabele op 0.
+**Opdracht** Hou het aantal gegeten appels bij. 
+
+_Tip 1_: hiervoor heb je een *variabele* nodig, deze maak je in het menu *Variabelen*.   
+_Tip 2_: zet aan het begin van het spel de waarde van de variabele op 0.
+
+{{< voorbeeld kop="Klik om de voorbeeldcode voor de slang te laten zien" >}}
+{{< scratch >}}
+    wanneer groene vlag wordt aangeklikt
+    maak [score v] (0)
+    enzovoort
+{{< /scratch >}}
+{{< /voorbeeld >}}
+
+{{< voorbeeld kop="Klik om de voorbeeldcode voor de appel te laten zien" >}}
+{{< scratch >}}
+    wanneer groene vlag wordt aangeklikt
+    ga naar (willekeurige positie)
+    herhaal
+    als &lt;raak ik (slang hoofd v)?&gt; dan
+    ga naar (willekeurige positie)
+    verander [score v] met (1)
+    end
+{{< /scratch >}}
+{{< /voorbeeld >}}
+
+Nu komt het moeilijkste stukje van het spel: het lijf van de slang! Hiervoor
+ga je werken met *klonen* van de slang, deze functies vind je in het menu
+*Besturen*. Dit werkt zo:
+
+* het lijf van de slang maak je door op de plek van het hoofd een kloon te
+  maken.
+* het lijf van de slang is het tweede *uiterlijk* van de slang *sprite*, om
+  de kop in een lijf te laten veranderen heb je het *verander uiterlijk naar*
+  blok in het menu *Uiterlijken* nodig.
+* als je nog geen of weinig appels hebt gegeten, dan wil je zo'n kloon meteen - of in ieder 
+  geval heel snel - weer *laten verdwijnen*.
+* hoe meer appels je hebt gegeten dus hoe hoger je score, hoe langer je wilt
+  wachten met het laten verdwijnen van de kloon.
+
+**Opdracht** Kloon de kop van de slang (bij iedere stap), en laat de kloons
+na een tijdje weer verdwijnen. *Tip*: je kunt uitrekenen hoe lang je moet
+wachten door je score te vermenigvuldigen met hoe lang 1 stap van de slang
+duurt.
+
+{{< voorbeeld kop="Klik om de voorbeeldcode voor de slang te laten zien" >}}
+{{< scratch >}}
+      wanneer groene vlag wordt aangeklikt
+      herhaal
+      als &lt;toets [pijltje omhoog v] ingedrukt?&gt; dan
+      richt naar (0) graden
+      end
+      neem (10) stappen
+      wacht (0.1) sec.
+      maak een kloon van (mijzelf v)
+{{< /scratch >}}
+{{< /voorbeeld >}}
+
+{{< voorbeeld kop="Klik om de voorbeeldcode van kloons van de slang te laten zien" >}}
+{{< scratch >}}
+      wanneer ik als kloon start
+      verander uiterlijk naar (slang_lijf v)
+      wacht ((score) * (0.1)) sec.
+      verwijder deze kloon
+{{< /scratch >}}
+{{< /voorbeeld >}}
+
+## Verliezen als je in jezelf hapt
+
+Je hebt nu een slang die steeds langer wordt als ie meer appels eet. Wat nog
+mist is dat het spel is afgelopen als je slang in zichzelf bijt. Dit gebeurt
+wanneer een deel van het lijf een ander deel van het lijf raakt.
+
+**Opdracht** Zorg ervoor dat het spel stopt als de slang in zichzelf bijt.
+
+*Tip*: hiervoor kun je weer het *raak ik* blok gebruiken.
 
 {{< voorbeeld kop="Klik om de voorbeeldcode te laten zien" >}}
 {{< scratch >}}
