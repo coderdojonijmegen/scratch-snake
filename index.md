@@ -31,7 +31,7 @@ Dit zijn de stappen die je gaat programmeren:
 
 Als je dan nog zin (en tijd) hebt dan zijn er nog allerlei uitbreidingen mogelijk.
 
-Als startpunt voor de opdracht kun je dit project gebruiken (je kunt dan stap 1 van de opdraht overslaan). Je kunt het project zelf gaan bewerken door op de Remix knop boven in Scratch te klikken:
+Als startpunt voor de opdracht kun je dit project gebruiken (je kunt dan stap 1 van de opdracht overslaan). Je kunt het project zelf gaan bewerken door op de Remix knop boven in Scratch te klikken:
 
 ![Remix](imgs/remix.png)
 
@@ -84,6 +84,27 @@ Maar... als je de toets loslaat, dan houdt de slang op met bewegen.
 In de voorbeeldcode wordt het blok _wacht 0.1 sec_. gebruikt. Dit is niet nodig om de slang te laten bewegen, maar 
 wordt verderop in het spel belangrijk. Door de wachttijd en/of het aantal stappen dat de slang zet te veranderen kun je
 de snelheid van de slang bepalen.
+
+{{< voorbeeld kop="Extra: via de volgende aanpassing reageert de slang beter!" >}}
+{{< scratch >}}
+      wanneer groene vlag wordt aangeklikt
+      herhaal
+      neem (10) stappen
+      wacht (0.1) sec.
+      end
+{{< /scratch >}}
+
+{{< scratch >}}
+      wanneer groene vlag wordt aangeklikt
+      herhaal
+      als &lt;toets [pijltje omhoog v] ingedrukt?&gt; dan
+      richt naar (0) graden
+      end
+{{< /scratch >}}
+
+Met deze aanpassing check je elke update of er een pijltje is ingedrukt. 
+Voorheen gebeurde dit niet altijd, omdat we tussendoor ook 0.1 seconde wachtten.
+{{< /voorbeeld >}}
 
 ## Laat de appels verschijnen
 
