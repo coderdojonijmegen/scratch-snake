@@ -4,7 +4,7 @@ date: 2020-08-22T22:07:47+02:00
 draft: false
 toc: true
 headercolor: "teal-background"
-taal: Scratch
+onderwerp: Scratch
 ---
 
 We gaan met Scratch het klassieke spel Snake bouwen.
