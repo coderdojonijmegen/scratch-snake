@@ -13,9 +13,13 @@ We gaan met Scratch het klassieke spel Snake bouwen.
 
 ## Benodigdheden
 
-Deze opdrachten maak je met [Scratch](https://scratch.mit.edu/). Als je nog geen account had, maak dit dan eerst aan.
+Ga naar <a href="https://scratch.mit.edu/" target="_blank">https://scratch.mit.edu/</a> en klik op 'Aan de slag'.
 
-Zet in Scratch eerst de taal op Nederlands via de wereldbol linksboven.
+- Als je Scratch nog niet eerder hebt uitgeprobeerd, bekijk dan eerst de video onderaan die pagina.
+- Klik daarna op het groene pijltje naast de video om stap-voor-stap te leren hoe Scratch werkt.
+- Als je meer wil leren, klik dan bovenaan op 'Lessen', of ga hier verder met de handleiding. 
+
+<br>
 
 ## Inleiding
 
@@ -31,11 +35,10 @@ Dit zijn de stappen die je gaat programmeren:
 
 Als je dan nog zin (en tijd) hebt dan zijn er nog allerlei uitbreidingen mogelijk.
 
-Als startpunt voor de opdracht kun je dit project gebruiken (je kunt dan stap 1 van de opdracht overslaan). Je kunt het project zelf gaan bewerken door op de Remix knop boven in Scratch te klikken:
-
-![Remix](imgs/remix.png)
 
 De opdracht is afgeleid van [deze instructies](https://bournetocode.com/projects/7-CS-ScratchArcade/pages/2_Lesson.html) ([Github bron](https://github.com/digixc/7-CS-ScratchArcade)).
+
+<br>
 
 ## Maak de slang
 
@@ -50,6 +53,8 @@ Volg deze stappen om een sprite van de slang te maken:
 4. Klik op het icoon voor een nieuw uiterlijk (linksonder, plaatje van de kat) en kies voor Upload uiterlijk.
 5. Upload het lijf van de slang.
 6. Klik nu op het hoofd van de slang.
+
+<br>
 
 ## Zorg dat de slang kan bewegen
 
@@ -106,6 +111,8 @@ Met deze aanpassing check je elke update of er een pijltje is ingedrukt.
 Voorheen gebeurde dit niet altijd, omdat we tussendoor ook 0.1 seconde wachtten.
 {{< /voorbeeld >}}
 
+<br>
+
 ## Laat de appels verschijnen
 
 Nu is het tijd om de slang eten te geven. Dit voorbeeld gaat uit van appels, je kunt natuurlijk ook iets heel anders 
@@ -143,6 +150,8 @@ _Tip_: hiervoor kun je het blok *raak ik ...* uit het menu *Waarnemen* gebruiken
       end
 {{< /scratch >}}
 {{< /voorbeeld >}}
+
+<br>
 
 ## Maak de slang langer
 
@@ -217,6 +226,8 @@ duurt.
 {{< /scratch >}}
 {{< /voorbeeld >}}
 
+<br>
+
 ## Verliezen als je in jezelf hapt
 
 Je hebt nu een slang die steeds langer wordt als ie meer appels eet. Wat nog
@@ -235,6 +246,8 @@ wanneer een deel van het lijf een ander deel van het lijf raakt.
 {{< /scratch >}}
 {{< /voorbeeld >}}
 
+<br>
+
 ## Uitbreidingen
 
 Je kunt het spel natuurlijk nog veel mooier, spannender en moeilijker maken.
@@ -248,5 +261,9 @@ aan *Snake*:
 * kies een mooie achtergrond voor je spel
 * laat ook voorwerpen verschijnen die je juist moet ontwijken
 * programmeer het spel voor twee spelers
+
+<br>
+<br>
+<br>
 
 {{< licentie rel="http://creativecommons.org/licenses/by-nc-sa/4.0/">}}
