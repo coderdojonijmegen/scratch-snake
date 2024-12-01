@@ -35,7 +35,7 @@ Als startpunt voor de opdracht kun je dit project gebruiken (je kunt dan stap 1 
 
 ![Remix](imgs/remix.png)
 
-De opdracht is afgeleid van [deze instructies](https://bournetocode.com/projects/7-CS-ScratchArcade/pages/2_Lesson.html) ([Github bron](https://github.com/digixc/7-CS-ScratchArcade)).
+De opdracht is afgeleid van de instructies gemaakt door https://bournetocode.com en beschikbaar via ([Github bron](https://github.com/digixc/7-CS-ScratchArcade)).
 
 ## Maak de slang
 
