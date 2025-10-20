@@ -31,7 +31,7 @@ Dit zijn de stappen die je gaat programmeren:
 
 Als je dan nog zin (en tijd) hebt dan zijn er nog allerlei uitbreidingen mogelijk.
 
-Als startpunt voor de opdracht kun je dit project gebruiken (je kunt dan stap 1 van de opdracht overslaan). Je kunt het project zelf gaan bewerken door op de Remix knop boven in Scratch te klikken:
+Als startpunt voor de opdracht kun je [dit project](https://scratch.mit.edu/projects/400374714) gebruiken (je kunt dan stap 1 van de opdracht overslaan). Je kunt het project zelf gaan bewerken door op de Remix knop boven in Scratch te klikken:
 
 ![Remix](imgs/remix.png)
 
@@ -41,7 +41,9 @@ De opdracht is afgeleid van de instructies gemaakt door https://bournetocode.com
 
 Als je gekozen hebt het project helemaal vanaf het begin te doen, ontwerp dan je eigen slang of download deze plaatjes om de twee uiterlijken van de slang mee te maken:
 
-![Slang lijf](imgs/slang_lijf.png) ![Slang hoofd](imgs/slang_hoofd.png)
+- lijf: ![Slang lijf](imgs/slang_lijf.png)
+- hoofd: ![Slang hoofd](imgs/slang_hoofd.png)
+
 Volg deze stappen om een sprite van de slang te maken:
 
 1. Klik op het icoon voor een nieuwe sprite (rechtsonder, plaatje van de kat) en kies voor Upload sprite.
