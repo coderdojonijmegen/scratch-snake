@@ -15,7 +15,7 @@ We gaan met Scratch het klassieke spel Snake bouwen.
 
 Deze opdrachten maak je met [Scratch](https://scratch.mit.edu/). Als je nog geen account had, maak dit dan eerst aan.
 
-Zet in Scratch eerst de taal op Nederlands via de wereldbol linksboven.
+Zet in Scratch eerst de taal op Nederlands via het selectiemenu onderaan de pagina.
 
 ## Inleiding
 
@@ -31,9 +31,9 @@ Dit zijn de stappen die je gaat programmeren:
 
 Als je dan nog zin (en tijd) hebt dan zijn er nog allerlei uitbreidingen mogelijk.
 
-Als startpunt voor de opdracht kun je [dit project](https://scratch.mit.edu/projects/400374714) gebruiken (je kunt dan stap 1 van de opdracht overslaan). Je kunt het project zelf gaan bewerken door op de Remix knop boven in Scratch te klikken:
+Als startpunt voor de opdracht kun je [dit project](https://scratch.mit.edu/projects/400374714) gebruiken (je kunt dan stap 1 van de opdracht overslaan). Je kunt het project zelf gaan bewerken door op de "bekijk van binnen" knop boven in Scratch te klikken:
 
-![Remix](imgs/remix.png)
+![Remix](imgs/bekijk_van_binnen.png)
 
 De opdracht is afgeleid van de instructies gemaakt door https://bournetocode.com en beschikbaar via ([Github bron](https://github.com/digixc/7-CS-ScratchArcade)).
 
@@ -50,6 +50,7 @@ Volg deze stappen om een sprite van de slang te maken:
 2. Upload het hoofd van de slang.
 3. Ga naar het tabblad Uiterlijken (linksboven, rechts naast het Code tabblad).
 4. Klik op het icoon voor een nieuw uiterlijk (linksonder, plaatje van de kat) en kies voor Upload uiterlijk.
+![Sprite uploaden knop](imgs/sprite_uploaden.png)
 5. Upload het lijf van de slang.
 6. Klik nu op het hoofd van de slang.
 
@@ -105,7 +106,7 @@ de snelheid van de slang bepalen.
 {{< /scratch >}}
 
 Met deze aanpassing check je elke update of er een pijltje is ingedrukt. 
-Voorheen gebeurde dit niet altijd, omdat we tussendoor ook 0.1 seconde wachtten.
+Voorheen gebeurde dit niet altijd, omdat we tussendoor ook 0.1 seconde wachten.
 {{< /voorbeeld >}}
 
 ## Laat de appels verschijnen
@@ -232,9 +233,10 @@ wanneer een deel van het lijf een ander deel van het lijf raakt.
 {{< voorbeeld kop="Klik om de voorbeeldcode te laten zien" >}}
 {{< scratch >}}
       wanneer ik als kloon start
-      als &lt;raak ik kleur [#9afeb6]?&gt; dan
+      als &lt;raak ik kleur [#ffff00]?&gt; dan
       stop [alle v]
 {{< /scratch >}}
+(we kiezen hier een kleur die je alleen op het lichaam ziet)
 {{< /voorbeeld >}}
 
 ## Uitbreidingen
